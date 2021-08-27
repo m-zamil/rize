@@ -1,0 +1,214 @@
+/*Bootstrap overrides*/
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #2a4b76;
+}
+
+.nav-pills .nav-link {
+  color: #2a4b76;
+  font-weight: bold;
+  padding: 16px 40px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+}
+
+/* Tab icons*/
+.nav-pills .nav-link::before {
+  content: "";
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+#v-pills-profile-tab::before {
+  background-image: url("../images/icons/person.svg");
+}
+#v-pills-profile-tab.active::before {
+  background-image: url("../images/icons/person-active.svg");
+}
+#v-pills-transactions-tab::before {
+  background-image: url("../images/icons/transactions.svg");
+}
+#v-pills-transactions-tab.active::before {
+  background-image: url("../images/icons/transactions-active.svg");
+}
+#v-pills-wallet-tab::before {
+  background-image: url("../images/icons/wallet.svg");
+}
+#v-pills-wallet-tab.active::before {
+  background-image: url("../images/icons/wallet-active.svg");
+}
+#v-pills-investments-tab::before {
+  background-image: url("../images/icons/investment.svg");
+}
+#v-pills-investments-tab.active::before {
+  background-image: url("../images/icons/investments-active.svg");
+}
+
+#v-pills-favourite-tab::before {
+  background-image: url("../images/icons/favourite-icon.svg");
+}
+#v-pills-favourite-tab.active::before {
+  background-image: url("../images/icons/favourite-active.svg");
+}
+
+#v-pills-sign-out-tab::before {
+  background-image: url("../images/icons/sign-out.svg");
+}
+.profile-header {
+  text-align: center;
+  padding: 3rem;
+}
+.profile-header .account-name {
+  color: #2a4b76;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+.accordion-button {
+  font-size: 20px;
+}
+
+.edit-btn,
+.cancel-btn,
+.save-btn {
+  padding: 10px 30px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.cancel-btn {
+  color: #f3ad68;
+  border: 1px solid #f3ad68;
+  background-color: transparent;
+}
+.cancel-btn:hover {
+  border: 1px solid #f3ad68;
+  background-color: transparent;
+  color: #f3ad68;
+  box-shadow: 1px 1px 2px #f3ad68;
+}
+.edit-btn::before {
+  content: "";
+  background-image: url("../images/icons/edit.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+}
+
+.more-btn::after {
+  content: url("../images/icons/more.png");
+  padding: 0 8px;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+}
+.label-data,
+.form-control,
+.form-select {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid #ced4da;
+  min-height: 48px;
+  margin-bottom: 1rem;
+}
+
+.profile-edit.hidden {
+  display: none !important;
+}
+
+.transaction-table,
+.investment-table {
+  border-collapse: separate;
+  border-spacing: 0 0.5em;
+  text-align: center;
+}
+
+.transaction-table td,
+th {
+  border: 0;
+}
+.transaction-table th {
+  text-align: start;
+}
+.investment-table tr {
+  text-align: center;
+}
+
+/* Bootstrap modal */
+.modal {
+  background-color: rgb(42, 75, 118);
+}
+
+/*SMS Verification*/
+
+.number-code > div {
+  display: flex;
+  justify-content: center;
+}
+.number-code > div > input:not(:last-child) {
+  margin-right: 16px;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: min(100%, 50rem);
+}
+.content-area p {
+  color: hsl(0, 0%, 90%);
+  font-size: 0.8em;
+}
+
+.smsForm {
+}
+.smsForm input.code-input {
+  font-size: 1.5em;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  border: 1px solid gray;
+}
+
+.smsForm input {
+  padding: 8px;
+  border-radius: 4px;
+
+  border: 1px solid gray;
+  border: 4px solid transparent;
+}
+
+.smsForm input:invalid {
+  box-shadow: none;
+}
+.smsForm input:focus {
+  outline: none;
+  border: 1px solid #ebb447;
+  box-shadow: 1px 1px 4px #ebb447;
+}
+
+.resend-code-btn {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #f3ad68;
+}
+.resend-code-btn:hover {
+  color: #ebb447;
+}

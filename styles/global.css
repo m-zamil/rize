@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap");
+
+/* @import url("../fonts/IBM-Plex-Arabic-Regular.ttf"); */
+/* @import url("../fonts/Montserrat-Arabic-Regular.woff");
+@import url("../fonts/Montserrat-Arabic-Light.woff");
+@import url("../fonts/Montserrat-Arabic-Medium.woff");
+@import url("../fonts/Montserrat-Arabic-SemiBold.woff");
+@import url("../fonts/Montserrat-Arabic-Bold.woff"); */
+
+/*Optional link
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet"> */
+
+:root {
+  --bs-body-bg: #f5f8ff;
+  --font-family-base: "IBM Plex Sans Arabic", sans-serif;
+  --bs-blue: #2a4b76;
+  --bs-primary-rgb: #2a4b76;
+  --bs-secondary: #e0af7e;
+}
+
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+ul li::marker {
+  color: #e0af7e;
+}
+
+.bg-primary {
+  background-color: var(--bs-primary-rgb) !important;
+}
+.text-primary {
+  color: #2a4b76 !important;
+}
+.text-yellow {
+  color: #e0af7e;
+}
+.btn-primary {
+  background-color: #e0af7e;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.text-blue {
+  color: #2a4b76;
+}
+.text-blue:hover {
+  color: #2a4b76;
+}
+.btn-primary:focus {
+  background-color: #f3ad68;
+  box-shadow: 0 0 0 0.25rem rgb(243, 173, 104, 0.5) !important;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  box-shadow: 0 0 0 0.25rem rgb(243, 173, 104, 0.5) !important;
+}
+.btn-primary:active {
+  background-color: #f3ad68 !important;
+}
+
+.btn-secondary {
+  border: 1px solid #e0af7e;
+  font-weight: bold;
+  color: #e0af7e;
+  padding: 10px 20px;
+  background-color: transparent;
+}
+.btn-secondary:hover {
+  box-shadow: 1px 1px 2px #f3ad68;
+  border: 1px solid #f3ad68;
+  background-color: transparent;
+  color: #f3ad68;
+}
+.btn-secondary:active {
+  border: 1px solid #f3ad68;
+  background-color: transparent;
+  color: #f3ad68;
+}
+
+.btn-primary:hover {
+  background-color: #f3ad68;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+/* Navbar styling*/
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .btn {
+  font-size: 16px;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-item {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+/*Footer styling*/
+
+footer {
+  background-color: #fff;
+  padding-bottom: 85px;
+  padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 60px 190px 60px;
+  }
+}
+
+footer h2 {
+  margin-bottom: 32px;
+}
+
+footer ul {
+  list-style: none;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+footer li {
+  margin-bottom: 32px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Cards */
+.card {
+  max-width: 332px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-header {
+  background-color: #2a4b76;
+  color: #fff;
+}
+
+.card-footer {
+  background-color: #e0af7e;
+  color: #fff;
+  text-align: center;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-img,
+.card-img-top {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-top: 0;
+}
+
+.card-body .location__icon {
+  padding-left: 10px;
+}
+
+.card-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 57px;
+}
+
+.card-text:last-child {
+  justify-content: center;
+}
+
+.card-text p {
+  margin-bottom: 0;
+}
+
+.card-cta .btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  padding: 12px;
+}
+.card hr {
+  opacity: 0.15;
+}
+
+.form-check-input:checked {
+  background-color: transparent;
+  border-color: #e0af7e;
+}
+
+.form-check-input:checked[type="radio"] {
+  background-image: url(../images/icons/radio-checked.png);
+}
+.form-check-input:checked[type="checkbox"] {
+  background-image: url(../images/icons/checkbox-checked.png);
+  border: 0;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 50%;
+}
+.form-check-input {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  margin-left: 8px;
+}
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: 0;
+}
+
+.accordion-button {
+  font-weight: bold;
+  padding-right: 0;
+}
+
+.accordion-button::after {
+  background-image: url("../images/icons/arrow-head-down.png");
+  background-size: auto;
+  background-position: center;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/icons/arrow-head-down.png");
+  background-size: auto;
+  background-position: center;
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.form-check-input:checked + label {
+  font-weight: bold;
+}
+
+.accordion-body {
+  padding-right: 0;
+}
+
+.spacer-6 {
+  height: 1px;
+  margin-bottom: 6rem;
+}
+@media (max-width: 576px) {
+  .spacer-6 {
+    margin-bottom: 3rem;
+  }
+}
+
+.ml--1 {
+  margin-left: -1rem;
+}
+.mb--1 {
+  margin-bottom: -1px;
+}
+
+.bg-skygreen {
+  background-color: #f8fbfd;
+}
+.tab-pane .carousel-item {
+  max-height: 285px;
+}
+
+/*Breadcrumb resets*/
+.breadcrumb {
+  margin-bottom: 0;
+}
+
+.breadcrumb-item {
+  color: #2a4b76;
+  font-weight: bold;
+}
+.breadcrumb-item a {
+  color: #2a4b76;
+  text-decoration: none;
+}
+.breadcrumb-item.active {
+  font-weight: bold;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: url("../images/icons/arrow-head-left.png");
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 1424px) {
+  .container-md {
+    max-width: 1424px;
+  }
+  .container-xxl {
+    max-width: 1424px;
+  }
+}
+
+/*Add to favourite toggle*/
+
+.add-to-favourite-btn {
+  background-image: url("../images/icons/add-to-favourite.svg");
+  width: 20px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.favourite {
+  background-image: url("../images/icons/favourite.svg");
+}
+
+/*table resets*/
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: inherit;
+}
+
+.input-wrapper {
+  position: relative;
+}
+.input-wrapper::before {
+  content: "ر.س";
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  color: gray;
+  user-select: none;
+  pointer-events: none;
+}
+
+.input-wrapper.distance::before {
+  content: "م2";
+}
+
+/* For resetting calender icon*/
+::-webkit-search-cancel-button,
+::-webkit-clear-button {
+  -webkit-appearance: none;
+  background-image: url("../images/icons/calender-icon.png");
+  color: rgba(0, 0, 0, 0.54);
+  cursor: pointer;
+  height: 1.5rem;
+  margin-right: 0;
+  width: 1.5rem;
+}
+
+::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  background-image: url("../images/icons/calender-icon.png");
+  width: 14px;
+  height: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  margin-left: 0.5rem;
+}

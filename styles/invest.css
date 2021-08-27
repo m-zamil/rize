@@ -1,0 +1,243 @@
+.card-tab-btns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 332px;
+  margin: 0 auto;
+}
+.card-tab-btns .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0af7e;
+  background-color: #fff;
+  color: #e0af7e;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+.card-tab-btns .circle.active {
+  background-color: #e0af7e;
+  color: #fff;
+}
+.card-tab-btns .circle.visited {
+  background-image: url("../images/icons/green-tick.png");
+  background-size: cover;
+  border: 0;
+}
+
+.card-tab-title {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.card-tab-dotted-line {
+  position: absolute;
+  top: 9px;
+  color: #e0af7e;
+  font-weight: bold;
+  overflow: hidden;
+  height: 14px;
+  user-select: none;
+}
+.btn-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  line-height: 2;
+}
+
+.form-check-input:checked[type="checkbox"] {
+  background-image: url(../images/icons/tick-mark.png);
+}
+.form-check-input + label {
+  font-weight: bold;
+  color: #e0af7e;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+  padding: 5px;
+}
+
+.btn-outline-yellow {
+  outline: 1px solid #e0af7e;
+  color: #e0af7e;
+  font-weight: bold;
+}
+.btn-outline-yellow:hover {
+  color: #e0af7e;
+}
+
+/*Investment form flow tabs*/
+input.invalid {
+  background-color: #ffdddd !important;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: #e0af7e;
+}
+
+.form__tab {
+  display: none;
+}
+
+.nav-tabs,
+.nav-tabs .nav-link.active {
+  border: 0;
+}
+
+.nav-tabs .nav-link.active label {
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.nav-tabs .nav-link input,
+.nav-tabs .nav-link label {
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+  padding-right: 8px;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border: 0;
+  border-color: #fff;
+}
+
+.form-check-input {
+  margin-left: 0;
+}
+
+.btn-secondary:active {
+  background-color: #e0af7e;
+}
+
+.btn-secondary:focus {
+  background-color: #e0af7e;
+}
+
+/*Investment form pop up*/
+.custom-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(42, 75, 118);
+  background-color: rgba(42, 75, 118, 0.6);
+}
+
+.close {
+  color: #000;
+  font-size: 28px;
+  padding-right: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+/* Modal Content */
+.custom-modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: auto;
+  padding: 2rem 2rem;
+  padding-top: 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-modal-content img {
+  margin: 0 auto;
+  display: block;
+  width: 50px;
+}
+
+.custom-modal-content h2 {
+  color: #2a4b76;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 24px;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: gray;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  padding-right: 8px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.custom-modal-body {
+  padding: 2px 16px;
+}

@@ -1,0 +1,79 @@
+.carousel-control-next-icon {
+  background-image: url("../images/icons/slider-next.png");
+  border-radius: 50%;
+  background-color: #2a4b76;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../images/icons/slider-prev.png");
+  border-radius: 50%;
+  background-color: #2a4b76;
+}
+
+.progress {
+  width: 70%;
+  margin: 0 auto;
+}
+td {
+  width: 60%;
+  border-width: 0 1px 1px 0;
+  border-color: inherit;
+}
+
+.table > :not(caption) > * > * {
+  padding: 1rem 1rem;
+}
+.file__links {
+  list-style: none;
+}
+.file__links li {
+  padding: 10px;
+}
+.file__links li a::before {
+  content: url(../images/icons/doc-icon.png);
+  position: relative;
+  left: 20px;
+  top: 7px;
+}
+
+.file__links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.before-sticky-cta {
+  position: relative;
+  z-index: 1;
+}
+
+.sources ul li {
+  line-height: 1.7;
+}
+.sources ul li::marker {
+  color: #e0af7e;
+}
+
+.sticky-cta {
+  position: sticky;
+  top: 150px;
+  margin-top: -100px;
+}
+
+/*nav tabs*/
+.nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+}
+.nav-tabs .nav-link {
+  margin-bottom: -2px;
+  border-width: 0 0 2px 0;
+  color: #000;
+  font-weight: bold;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: #e0af7e;
+  font-weight: bold;
+  border-bottom: 2px solid #e0af7e;
+  margin-bottom: -2px;
+}
