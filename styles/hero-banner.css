@@ -1,0 +1,149 @@
+main {
+  position: relative;
+}
+.hero-bg {
+  background: transparent radial-gradient(closest-side at 50% 40%, #0d294e 0%, #405880 100%) 0% 0% no-repeat padding-box;
+  z-index: 111;
+  opacity: 0.87;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero-wrapper {
+  height: 100vh;
+  height: 100vh;
+  background-color: rgb(13, 41, 78, 0.87);
+  background-image: url("../images/florian-schmidinger-b_79nOqf95I-unsplash\ \(1\).png"), url("../images/Union-2.png");
+  background-size: cover;
+  position: relative;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 112;
+}
+
+.hero-animation {
+  position: absolute;
+  z-index: 111;
+  height: 100%;
+  /* bottom: 0; */
+  left: 0;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+svg {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Hero section banner animations*/
+.hero-animation svg .white-line {
+  opacity: 0;
+}
+
+.hero-wrapper:hover .hero-animation svg .white-line.line-2 {
+  opacity: 1;
+  animation: line2 400ms ease-in;
+  transition: all 1s ease;
+}
+
+@keyframes line2 {
+  from {
+    opacity: 0;
+    transform: translate(22853.803px, 15150.455px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(22853.803px, 14798.455px);
+  }
+}
+
+.hero-wrapper:hover .hero-animation svg .white-line.line-1 {
+  opacity: 1;
+  animation: line1 400ms ease-in;
+  transition: all 1s ease;
+}
+
+@keyframes line1 {
+  from {
+    opacity: 0;
+    transform: translate(274px, 1160px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(274px, 312px);
+  }
+}
+
+.hero-wrapper:hover .hero-animation svg .white-line.line-3 {
+  opacity: 1;
+  animation: line3 400ms ease-in;
+  transition: all 1s ease;
+}
+
+@keyframes line3 {
+  from {
+    opacity: 0;
+    transform: translate(170px, 98px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-6.332px, -6.63px);
+  }
+}
+
+.hero-wrapper:hover .hero-animation svg .white-line.line-4 {
+  opacity: 1;
+  animation: line4 400ms ease-in;
+  transition: all 1s ease;
+}
+
+@keyframes line4 {
+  from {
+    opacity: 0;
+    transform: translate(-141.245px, 104.226px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-10.245px, -7.774px);
+  }
+}
+
+.hero-wrapper:hover .hero-animation svg .white-line.line-5 {
+  opacity: 1;
+  animation: line5 400ms ease-in;
+  transition: all 1s ease;
+}
+
+@keyframes line5 {
+  from {
+    opacity: 0;
+    transform: translate(0, 125.961px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, -245.039px);
+  }
+}
+
+.hero__title {
+  color: #fff;
+  line-height: 1.5;
+}

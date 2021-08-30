@@ -1,0 +1,41 @@
+.hero-wrapper {
+  background-image: url("../images/sieuwert-otterloo-aren8nutd1Q-unsplash.png"), url("../images/Union-2.png");
+}
+
+.contact-card {
+  background-color: #fcf3ea;
+}
+
+/* .email-link {
+  display: flex;
+  align-items: center;
+} */
+.link-with-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.link-with-icon::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+
+.email-icon::before {
+  background-image: url("../images/icons/contact-card-email.svg");
+}
+
+.location-icon::before {
+  background-image: url("../images/icons/location-1.svg");
+}
+
+.wa-icon {
+  justify-content: flex-start;
+  flex-direction: row-reverse;
+}
+.wa-icon::before {
+  background-image: url("../images/icons/whatsapp-y.svg");
+}

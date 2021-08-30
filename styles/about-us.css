@@ -1,3 +1,29 @@
+.title {
+  font-size: 42px;
+  color: #2a4b76;
+  font-weight: bold;
+  display: inline-block;
+  padding-bottom: 1px !important;
+  padding: 0 10px 1px;
+  position: relative;
+  z-index: 1;
+}
+.title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #d7e4f5;
+  height: 10px;
+  z-index: -1;
+}
+
+.hero-wrapper {
+  background-image: url("../images/daniel-barnes-RKdLlTyjm5g-unsplash.png"), url("../images/Union-2.png");
+}
+
 .vision-message {
   position: relative;
   top: -95px;
