@@ -1,0 +1,67 @@
+.article-title {
+  color: #2a4b76;
+  font-weight: bold;
+}
+.article-content {
+  padding: 0 15%;
+}
+
+.wrapper {
+  position: relative;
+  display: flex;
+}
+
+#video-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #000000;
+  opacity: 0.7;
+  z-index: 9999999;
+}
+#video-overlay svg {
+  max-width: 100%;
+}
+#video {
+  max-width: 100%;
+}
+#video-overlay:hover {
+  cursor: pointer;
+}
+#video-overlay:hover path {
+  opacity: 1;
+}
+
+.card {
+  max-width: 100%;
+  border: 0;
+  box-shadow: 0px 0px 15px rgb(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.date {
+  font-family: "Montserrat-Arabic", sans-serif;
+  color: #e0af7e;
+}
+
+.more-btn {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e0af7e;
+}
+
+.more-btn::after {
+  content: url("../images/icons/more-left.svg");
+}
+
+.text-primary {
+  color: #2a4b76;
+}
