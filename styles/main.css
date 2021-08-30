@@ -205,6 +205,12 @@ svg {
   width: 300px;
 }
 
+.bg-logo-lines {
+  background-image: url("../images/bg-logo-lines.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .using-rise-wrapper {
   justify-content: flex-end;
 }

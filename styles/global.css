@@ -33,6 +33,10 @@ a:hover {
   color: #e0af7e;
 }
 
+.lh-2 {
+  line-height: 2;
+}
+
 footer a {
   font-weight: normal;
 }

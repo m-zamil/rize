@@ -1,0 +1,66 @@
+.vision-message {
+  position: relative;
+  top: -95px;
+  z-index: 111;
+}
+
+.vision-message .card {
+  max-width: 100%;
+  gap: 2.5rem;
+  box-shadow: 0px 33px 39px #2a4b760f;
+  border: 0;
+}
+.vision-message .card img {
+  width: 80px;
+}
+
+.vision-message .card .title {
+  margin-left: auto;
+}
+
+.our-goals {
+  counter-reset: cardsr;
+}
+
+.card-sr::before {
+  counter-increment: cardsr;
+  content: counter(cardsr);
+  color: #fff;
+  font-weight: bold;
+}
+
+.goals-card {
+  background-color: #fff;
+  padding: 50px;
+  padding-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0px 9px 20px #969caa1a;
+  font-weight: bold;
+  text-align: center;
+  height: 100%;
+}
+.goals-card .card-sr {
+  position: absolute;
+  top: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-goals .row > div:nth-child(even) .card-sr {
+  background-color: #2a4b76;
+}
+.our-goals .row > div:nth-child(odd) .card-sr {
+  background-color: #e0af7e;
+}
+.license-info img {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
