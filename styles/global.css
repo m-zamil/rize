@@ -25,6 +25,18 @@ body {
   font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #e0af7e;
+}
+
+footer a {
+  font-weight: normal;
+}
+
 ul li::marker {
   color: #e0af7e;
 }
@@ -44,6 +56,11 @@ ul li::marker {
   color: #fff;
   font-weight: bold;
   padding: 10px 20px;
+}
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #c9cace;
+  border-color: #c9cace;
 }
 .text-blue {
   color: #2a4b76;
@@ -87,6 +104,11 @@ ul li::marker {
 }
 .form-control:focus {
   box-shadow: none;
+}
+
+.more-btn::after {
+  content: url("../images/icons/more.png");
+  padding: 0 8px;
 }
 
 /* Navbar styling*/
@@ -268,6 +290,10 @@ footer ul li a {
 }
 .mb--1 {
   margin-bottom: -1px;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
 }
 
 .bg-skygreen {

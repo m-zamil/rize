@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80.016" height="88.796" viewBox="0 0 80.016 88.796">
+  <g id="Group_1046" data-name="Group 1046" transform="matrix(1, -0.017, 0.017, 1, -48.484, 2.716)">
+    <path id="Path_2841" data-name="Path 2841" d="M105.416,22.609,112.352,3l-24.6,3.767L62.64,3l7,19.609C59.1,27.043,52,51.456,52,60.818,52,81.089,68.007,83.44,87.751,83.44S123.5,82.251,123.5,60.72C123.5,51.233,116.209,27,105.416,22.609Z" fill="none" stroke="#2a4b76" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <line id="Line_905" data-name="Line 905" x2="31.282" transform="translate(71.175 25.605)" fill="none" stroke="#2a4b76" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
+    <g id="Group_1044" data-name="Group 1044" transform="translate(81.187 40.985)">
+      <path id="Path_2842" data-name="Path 2842" d="M70.9,15.4c-.809-1.426-2.485-2.914-5.948-2.914-6.31,0-7.311,5.568-5.814,8.093,1.242,2.091,3.526,2.69,5.564,3.159,1.707.393,6.954,1.292,6.954,5.434,0,3.593-3,5.8-6.7,5.8a7.312,7.312,0,0,1-5.479-2.226" transform="translate(-58.531 -8.087)" fill="none" stroke="#e0af7e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5"/>
+      <line id="Line_906" data-name="Line 906" y1="3.724" transform="translate(6.564)" fill="none" stroke="#e0af7e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5"/>
+      <line id="Line_907" data-name="Line 907" y1="2.234" x2="0.055" transform="translate(6.537 29.048)" fill="none" stroke="#e0af7e" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.5"/>
+    </g>
+  </g>
+</svg>
