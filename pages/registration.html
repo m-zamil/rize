@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/registration.css" />
+  </head>
+  <body>
+    <div class="login-form-wrapper">
+      <div class="container-fluid">
+        <div class="row bg-blue">
+          <div class="login-cover col-12 col-md-6 bg-blue bg-login d-flex flex-column justify-content-start align-items-center gap-5">
+            <div class="text-center">
+              <a href="/"><img src="../images/logo-stack.svg" alt="" /></a>
+            </div>
+            <div class="text-center">
+              <p class="fw-bold lh-lg">رايز هي منصة تمويل الملكية الجماعية متخصصة في المشاريع العقارية. تتيح المنصة للمستثمرين بالدخول</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 bg-white login-form">
+            <h3 class="form-title">إنشاء حساب</h3>
+            <div class="card-tab-btns">
+              <div class="btn-center">
+                <div class="circle btn-card">1</div>
+              </div>
+              <div class="btn-center">
+                <div class="circle btn-card">2</div>
+              </div>
+              <div class="btn-center">
+                <div class="circle btn-card">3</div>
+              </div>
+              <div class="btn-center">
+                <div class="circle btn-card">4</div>
+              </div>
+              <div class="card-tab-dotted-line">- - - - - - - - - - - - - - - - - - - - - - - - - - - - -- - - - - - - -</div>
+            </div>
+            <form class="form-part-1 py-5 px-3 bg-white" name="Registration" id="registration" method="POST">
+              <!-- First form tab-->
+              <div class="form__tab">
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="firstName" class="form-label">الاسم الأول<sup class="ps-1">*</sup></label>
+                    <input name="first name" type="text" class="form-control form-control-lg" aria-label="الاسم الأول" id="firstName" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastName" class="form-label">الاسم الأخير<sup class="ps-1">*</sup></label>
+                    <input name="last name" type="text" class="form-control form-control-lg" aria-label="الاسم الأخير" id="lastName" required />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="mb-3">
+                    <label for="phone1" class="form-label">رقم الجوال <sup>*</sup></label>
+                    <input name="phone" type="text" class="form-control form-control-lg" id="phone1" required="" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">كلمة السر<span>*</span></label>
+                    <input name="password" type="password" class="form-control form-control-lg" id="password" required="" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password1" class="form-label">تأكيد كلمة السر<span>*</span></label>
+                    <input name="password" type="password" class="form-control form-control-lg" id="password1" required="" />
+                  </div>
+                </div>
+              </div>
+              <!-- First form tab end-->
+              <!-- Second form tab-->
+              <div class="form__tab">
+                <div class="row mb-4">
+                  <div class="col-md-6">
+                    <label for="first-Name" class="form-label">الاسم الأول<sup class="ps-1">*</sup></label>
+                    <input name="first name" type="text" class="form-control form-control-lg bg-light" aria-label="الاسم الأول" id="first-Name" required />
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="last-Name" class="form-label">الاسم الأخير<sup class="ps-1">*</sup></label>
+                    <input name="last name" type="text" class="form-control form-control-lg bg-light" aria-label="الاسم الأخير" id="last-Name" required />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <div class="mb-3">
+                    <label for="phone" class="form-label">رقم الجوال <sup>*</sup></label>
+                    <input name="phone" type="text" class="form-control form-control-lg bg-light" id="phone" required="" />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">البريد الالكتروني<sup>*</sup></label>
+                    <input name="email" type="email" class="form-control form-control-lg" id="email" required />
+                  </div>
+                  <div class="mb-3">
+                    <label for="gender" class="form-label">النوع<sup class="ps-1">*</sup></label>
+                    <select name="gender" id="gender" class="form-select form-select-lg bg-light">
+                      <option selected>ذكر</option>
+                      <option>أنثى</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="idNumber" class="form-label">رقم الهوية<sup class="ps-1">*</sup></label>
+                    <input name="ID number" dir="ltr" type="text" class="form-control form-control-lg bg-light" placeholder="12345678910" id="idNumber" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="idExp" class="form-label">تاريخ انتهاء الهوية<sup class="ps-1">*</sup></label>
+                    <input name="expiry date" type="date" class="form-control form-control-lg bg-light" id="idExp" required />
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <label for="city" class="form-label">المدينة<sup class="ps-1">*</sup></label>
+                    <input name="city" type="text" class="form-control form-control-lg" id="city" required />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="district" class="form-label">الحي<sup class="ps-1">*</sup></label>
+                    <input name="district" type="text" class="form-control form-control-lg" id="district" required />
+                  </div>
+                </div>
+                <div class="mb-4">
+                  <div class="col-12">
+                    <label for="address" class="form-label">العنوان تفصيليا<sup class="ps-1">*</sup></label>
+                    <input name="address" type="text" class="form-control form-control-lg" id="address" required />
+                  </div>
+                </div>
+              </div>
+              <!-- Second form tab end-->
+
+              <!--Third form tab start -->
+              <div class="form__tab">
+                <div class="row mb-4">
+                  <p>
+                    هل أنت مستثمر مبتدئ أم معتمد؟
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="../images/icons/question-mark.svg" alt="" /></a>
+                  </p>
+                  <span class="col-5">
+                    <input class="form-check-input" type="radio" name="user-type" id="userType" checked />
+                    <label class="form-check-label" for="userType">مستثمر مبتدئ</label>
+                  </span>
+                  <span class="col-5">
+                    <input class="form-check-input" type="radio" name="user-type" id="userType1" />
+                    <label class="form-check-label" for="userType1">مستثمر معتمد</label>
+                  </span>
+                </div>
+                <div class="mb-4">
+                  <div class="mb-3">
+                    <label for="netWorth" class="form-label">صافي الثروة؟<sup class="ps-1">*</sup></label>
+                    <select name="Net Worth" id="netWorth" class="form-select form-select-lg">
+                      <option selected>أقل من ٥ ملايين ر.س</option>
+                      <option>---</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="financialIncome" class="form-label">الدخل المالي<sup class="ps-1">*</sup></label>
+                    <select name="Financial Income" id="financialIncome" class="form-select form-select-lg">
+                      <option selected>١٠٠،٠٠٠ ر.س / سنة</option>
+                      <option>---</option>
+                    </select>
+                  </div>
+                  <div class="row mb-4">
+                    <p>هل استثمرت في العقارات من قبل؟</p>
+                    <span class="col-5">
+                      <input class="form-check-input" type="radio" name="Invested before?" id="investedBefore" checked />
+                      <label class="form-check-label" for="investedBefore">نعم</label>
+                    </span>
+                    <span class="col-5">
+                      <input class="form-check-input" type="radio" name="Invested before?" id="investedBefore1" />
+                      <label class="form-check-label" for="investedBefore1">لا</label>
+                    </span>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="expcInvestment" class="form-label">المبلغ المتوقع استثماره لكل فرصة<sup class="ps-1">*</sup></label>
+                    <select name="Expected investment" id="expcInvestment" class="form-select form-select-lg">
+                      <option selected>٢٠٠،٠٠٠ ر.س /سنة</option>
+                      <option>---</option>
+                    </select>
+                  </div>
+                  <div class="row mb-4">
+                    <p>هل أنت عضو مجلس إدارة تنفيذي في شركة اكتتاب؟</p>
+                    <span class="col-5">
+                      <input class="form-check-input" type="radio" name="Executive member of etitab?" id="execMember" checked />
+                      <label class="form-check-label" for="execMember">نعم</label>
+                    </span>
+                    <span class="col-5">
+                      <input class="form-check-input" type="radio" name="Executive member of etitab?" id="execMember1" />
+                      <label class="form-check-label" for="execMember">لا</label>
+                    </span>
+                  </div>
+                  <div class="mb-3">
+                    <label for="eduLevel" class="form-label">المستوى التعليمي<sup class="ps-1">*</sup></label>
+                    <select name="Educational Level" id="eduLevel" class="form-select form-select-lg">
+                      <option>--</option>
+                      <option>---</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="businessSector" class="form-label">قطاع العمل<sup class="ps-1">*</sup></label>
+                    <select name="Business Sector" id="businessSector" class="form-select form-select-lg">
+                      <option>--</option>
+                      <option>---</option>
+                    </select>
+                  </div>
+                  <div class="mb-4">
+                    <div class="col-12">
+                      <label for="occupation" class="form-label">الوظيفة<sup class="ps-1">*</sup></label>
+                      <input name="occupation" type="text" class="form-control form-control-lg" id="occupation" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--Fourth form tab start -->
+              <div class="form__tab">
+                <div>
+                  <h5 class="pb-4 fw-bold">تأكد من قراءة الشروط و الأحكام</h5>
+                  <ol>
+                    <li>الأهداف و السياسات المخطط اتباعها من قبل مدير الصندوق في استثمار أموال المشتركين</li>
+                    <li>المخاطر المحتملة التي يمكن أن تتعرض لها استثمارات الصندوق</li>
+                    <li>الرسوم و المصاريف المعتمدة</li>
+                    <li>مجلس إدارة الصندوق</li>
+                    <li>مراجع الحسابات المعتمد من مجلس إدارة الصندوق</li>
+                    <li>أسماء أعضاء اللجنة الشرعية و المقابل المادي لاستشارتهم في حال كون الصندوق يعمل وفقا لمبادئ الشريعة الإسلامية</li>
+                    <li>شروط الاشتراك و الاسترداد التي تحدد فترة الاشتراك و الاسترداد المسموح بها و المبالغ الدنيا للاشتراك أو الاسترداد</li>
+                    <li>أيام التقويم لأصول الصندوق و أيام شراء الوحدات أو استردادها</li>
+                    <li>المؤشر: يقارن مدير الصندوق آداء الصندوق بآداء مؤشر معين يحدد عند إنشاء الصندوق ، ويختار مدير الصندوق المؤشر بناء على نوعية استثمارات الصندوق من الناحية الجغرافية أو من ناحية نوع الأدوات المالية المستثمر فيها</li>
+                  </ol>
+                  <div class="form-check mb-5">
+                    <input class="form-check-input" name="Agree to T&amp;Cs" type="checkbox" id="terms&conditions" checked="" required="" />
+                    <label class="form-check-label text-yellow" for="terms&conditions">أوافق على جميع الشروط المذكورة.</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Registration form tab end-->
+
+              <div class="d-flex justify-content-between">
+                <button onclick="nextPrev(-1)" type="button" class="btn btn-secondary px-5 py-2" id="prevBtn">رجوع</button>
+                <button onclick="nextPrev(1)" type="button" class="btn btn-primary px-5 py-2" id="nextBtn">تأكيد العملية</button>
+              </div>
+              <div class="text-center mt-3">
+                <p>لديك حساب؟ <a href="./login.html" class="fw-bold">تسجيل الدخول</a></p>
+              </div>
+              <div class="text-center"><a href="./developer.html" class="text-yellow fw-bold">هل تريد تقديم فرص استثمارية كمطور؟</a></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg p-5">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body p-5 pt-3">
+            <h6 class="modal-title mb-5" id="exampleModalLabel">
+              <span><img src="../images/icons/q-mark.svg" alt="" /></span>
+              ما هو المستثمر المعتمد؟
+            </h6>
+            <ul>
+              <li class="mb-3">أي شخص تتجاوز ثروته الفردية ، أو صافي ثروته المشتركة مع زوجة ذلك الشخص أو ما يعادله ، ) ريال سعودي(….)باستثناء حقوق الملكية في محل الإقامة الرئيسي لذلك الشخص).</li>
+              <li class="mb-3">أي شخص لديه دخل فردي يزيد عن (…) ريال سعودي في كل من السنتين الأخيرتين أو دخل مشترك مع زوجة ذلك الشخص أو ما يعادله من الزوجين يزيد عن (…) ريال سعودي في كل سنة من تلك السنوات ولديه توقع معقول للوصول إلى نفس الدخل. المستوى في العام الحالي.</li>
+              <li class="mb-3">أي ائتمان ، يزيد إجمالي أصوله عن (…) ريال سعودي ، لم يتم تكوينه لغرض محدد هو اقتناء الأوراق المالية المعروضة.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Question modal end-->
+
+    <!--Bootstrap bundle with popper-->
+    <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/registration.js"></script>
+  </body>
+</html>

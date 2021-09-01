@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.rtl.min.css"
-    integrity="sha384-XfhC/Sid4FIGSXYebcOtcSCRFkd/zZzAMVipf0bNWucloRvcKK2/dpVWodQbQ1Ek" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.rtl.min.css" />
+
 
   <title>Account</title>
   <link rel="stylesheet" href="../styles/global.css" />
@@ -21,7 +21,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark text-white bg-primary">
         <div class="container-md">
-          <a class="navbar-brand" href="#"><img src="../images/logo.svg" alt="Logo" /></a>
+          <a class="navbar-brand" href="/"><img src="../images/logo.svg" alt="Logo" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -30,22 +30,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">الرئيسية</a>
+                <a class="nav-link" href="../index.html">الرئيسية</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">من نحن</a>
+                <a class="nav-link" href="./about-us.html">من نحن</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">الفرص الاستثمارية</a>
+                <a class="nav-link" href="investment.html">الفرص الاستثمارية</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">مقالات</a>
+                <a class="nav-link" href="./article-list.html">مقالات</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">تواصل معنا</a>
+                <a class="nav-link" href="contact-us.html">تواصل معنا</a>
               </li>
             </ul>
-            <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item px-0">
                 <a class="nav-link ps-1" href="#"><img src="../images/icons/search.svg" alt="" /></a>
               </li>
@@ -604,7 +604,7 @@
                               </tr>
                             </tbody>
                           </table>
-                          <button class="btn btn-primary d-block ms-auto more-btn">المزيد</button>
+                          <a href="./offering-registered.html"><button class="btn btn-primary d-block ms-auto more-btn">المزيد</button></a>
                         </div>
                       </div>
                     </div>
@@ -749,7 +749,7 @@
         <div class="row justify-content-around gap-5 gap-lg-0">
           <div class="col-12 col-lg-4 text-center">
             <div class="footer__logo pb-4">
-              <img src="../images/icons/logo-footer.svg" alt="" />
+              <a href="/"><img src="../images/icons/logo-footer.svg" alt="" /></a>
             </div>
             <div class="social__icons">
               <a class="pe-2" href="#"><img src="../images/icons/facebook.svg" alt="Facebook" /></a>
@@ -763,9 +763,9 @@
             <h4 class="pb-4">روابط تهمك</h4>
             <div class="col-6">
               <ul>
-                <li><a href="#">من نحن</a></li>
-                <li><a href="#">الفرص الاستثمارية</a></li>
-                <li><a href="#">مقالات</a></li>
+                <li><a href="./about-us.html">من نحن</a></li>
+                <li><a href="./investment.html">الفرص الاستثمارية</a></li>
+                <li><a href="./article-list.html">مقالات</a></li>
               </ul>
             </div>
             <div class="col-6">
@@ -788,8 +788,7 @@
                   ايبسوم</a>
               </li>
               <li>
-                <a href="tel:9665050505"><img src="../images/icons/whatsapp.svg" alt="" />&nbsp;&nbsp;&nbsp;&nbsp;966
-                  5050505 </a>
+                <a href="tel:9665050505"><img src="../images/icons/whatsapp.svg" alt="">&nbsp;&nbsp;&nbsp;&nbsp;<span dir="ltr">966 5050505</span></a>
               </li>
             </ul>
           </div>
@@ -888,7 +887,7 @@
         <div class="modal-body border-0">
           <p class="fw-bold pt-3 text-center">تم تحويل مبلغ 250,000 ريال سعودي بتاريخ 10 مايو، 2021 إلى حسابك البنكي بنجاح ، يمكنك رؤية التحويلات في حسابك</p>
           <div class="modal-footer border-0 justify-content-between">
-              <button type="button" class="btn btn-secondary px-5" >الرئيسية</button>
+              <a href="/"><button type="button" class="btn btn-secondary px-5" >الرئيسية</button></a>
               <button type="submit" class="btn btn-primary">التحويلات البنكية</button>
           </div>        
         </div>
@@ -899,29 +898,12 @@
       </div>
     </div>
   </div>
-  <!-- The Modal -->
-  <!-- <div id="myModal" class="custom-modal"> -->
-  <!-- Modal content -->
-  <!-- <div class="custom-modal-content">
-        <span class="close">&times;</span>
-
-        <div class="custom-modal-body">
-          <img src="../images/icons/green-tick.png" alt="" />
-          <h2>تمت العملية بنجاح</h2>
-          <p class="fw-bold pt-3">تم تحويل مبلغ (…) ر.س للاستثمار في مجمع البوليفارد التجاري</p>
-          <p>يمكنك رؤية استثماراتك و تحويلات من خلال حسابك الشخصي</p>
-          <div class="d-flex justify-content-between pt-5">
-            <a class="btn btn-outline-yellow px-4 py-2">الرئيسية</a>
-            <a class="btn btn-primary px-4 py-2">حسابي</a>
-          </div>
-        </div>
-      </div> -->
+ 
   </div>
   <script src="../scripts/global.js"></script>
   <!-- Bootstrap Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-    crossorigin="anonymous"></script>
+  <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+
   <script src="../scripts/account.js"></script>
 
 </body>

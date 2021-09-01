@@ -1,0 +1,116 @@
+.bg-login {
+  background-image: url("../images/registration-2.svg");
+  background-size: cover;
+}
+
+.card-tab-btns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  max-width: 332px;
+  margin: 0 auto;
+}
+.card-tab-btns .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0af7e;
+  background-color: #fff;
+  color: #e0af7e;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
+.card-tab-btns .circle.active {
+  background-color: #e0af7e;
+  color: #fff;
+}
+.card-tab-btns .circle.visited {
+  background-image: url("../images/icons/green-tick.png");
+  background-size: cover;
+  border: 0;
+}
+
+.card-tab-dotted-line {
+  position: absolute;
+  top: 9px;
+  color: #e0af7e;
+  font-weight: bold;
+  overflow: hidden;
+  height: 14px;
+  user-select: none;
+}
+.btn-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bg-white {
+  color: black;
+}
+
+/*Investment form flow tabs*/
+input.invalid {
+  background-color: #ffdddd !important;
+}
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: #e0af7e;
+}
+
+.form__tab {
+  display: none;
+}
+
+.nav-tabs,
+.nav-tabs .nav-link.active {
+  border: 0;
+}
+
+.nav-tabs .nav-link.active label {
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link {
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.nav-tabs .nav-link input,
+.nav-tabs .nav-link label {
+  cursor: pointer;
+  color: black;
+  font-weight: 400;
+  padding-right: 8px;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  border: 0;
+  border-color: #fff;
+}
+
+.form-check-input {
+  margin-left: 0;
+}
+
+.login-form {
+  padding: 80px 40px;
+}

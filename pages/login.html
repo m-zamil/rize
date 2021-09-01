@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+  </head>
+  <body>
+    <div class="login-form-wrapper">
+      <div class="container-fluid">
+        <div class="row bg-blue">
+          <div class="login-cover col-12 col-md-6 bg-blue bg-login d-flex flex-column justify-content-start align-items-center gap-5">
+            <div class="text-center">
+              <a href="/"><img src="../images/logo-stack.svg" alt="" /></a>
+            </div>
+            <div class="text-center">
+              <p class="fw-bold lh-lg">رايز هي منصة تمويل الملكية الجماعية متخصصة في المشاريع العقارية. تتيح المنصة للمستثمرين بالدخول</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 bg-white login-form">
+            <h3 class="form-title">تسجيل الدخول</h3>
+            <form>
+              <div class="mb-3">
+                <label for="phone" class="form-label">رقم الجوال <sup>*</sup></label>
+                <input name="phone" type="text" class="form-control form-control-lg" id="phone" required />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">كلمة السر<span>*</span></label>
+                <input name="password" type="password" class="form-control form-control-lg" id="password" required />
+              </div>
+              <div class="text-end mb-3"><a class="text-yellow fw-bold" href="">هل نسيت كلمة السر؟</a></div>
+              <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
+            </form>
+            <div class="text-center mt-3">
+              <p>ليس لديك حساب؟<a href="./registration.html" class="fw-bold">إنشاء حساب</a></p>
+            </div>
+            <div class="text-center"><a href="./developer.html" class="text-yellow fw-bold">هل تريد تقديم فرص استثمارية كمطور؟</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Bootstrap bundle with popper-->
+    <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

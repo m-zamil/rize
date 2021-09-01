@@ -1,0 +1,28 @@
+.bg-login {
+  background-image: url("../images/login-bg.svg");
+  background-size: cover;
+}
+
+.login-cover {
+  padding: 60px 100px 150px;
+}
+
+.login-form {
+  padding: 80px 100px;
+  border-radius: 0 8px 8px 0;
+}
+.login-form .form-title {
+  color: #2a4b76;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-form,
+.login-cover {
+  min-height: 100vh;
+}
+
+.bg-white {
+  color: black;
+}

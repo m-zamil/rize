@@ -1,0 +1,31 @@
+.accordion-button {
+  color: #2a4b76 !important;
+  font-size: 18px;
+  padding: 10px 0px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../images/icons/arrowup-blue.svg");
+}
+
+.accordion-button::after {
+  background-image: url("../images/icons/arrowup-blue.svg");
+}
+
+.accordion-button::before {
+  content: "";
+  display: inline-block;
+  margin-left: 12px;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  background-color: #2a4b76;
+}
+
+.accordion-body {
+  padding-right: 23px;
+}
+
+.accordion-body p {
+  margin-bottom: 0;
+}

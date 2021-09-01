@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Developer</title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="../vendors/bootstrap/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/developer.css" />
+  </head>
+  <body>
+    <div class="login-form-wrapper">
+      <div class="container-md">
+        <div class="row">
+          <div class="login-cover col-12 col-md-6 bg-blue bg-login d-flex flex-column justify-content-start align-items-center gap-5">
+            <div class="text-center">
+              <a href="/"><img src="../images/logo-stack.svg" alt="" /></a>
+            </div>
+            <div class="text-center">
+              <p class="fw-bold lh-lg">رايز هي منصة تمويل الملكية الجماعية متخصصة في المشاريع العقارية. تتيح المنصة للمستثمرين بالدخول</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 bg-white login-form">
+            <h3 class="form-title">إضافة فرصة</h3>
+            <form>
+              <div class="mb-3">
+                <label for="companyName" class="form-label">اسم الشركة<sup>*</sup></label>
+                <input name="Company name" type="text" class="form-control form-control-lg" id="companyName" required />
+              </div>
+              <div class="mb-3">
+                <label for="workPlan" class="form-label">خطة العمل<span>*</span></label>
+                <textarea rows="2" name="Work Plan" class="form-control form-control-lg" id="workPlan" required></textarea>
+              </div>
+              <label for="files" class="form-label">الملفات<sup>*</sup></label>
+              <div class="form-group files mb-4">
+                <input name="Files" type="file" class="form-control form-control-lg" id="files" required />
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">إرسال</button>
+            </form>
+
+            <div class="text-center mt-3">هل تريد تصفح الفرص كمستثمر؟ <a href="./login.html" class="fw-bold">تسجيل الدخول </a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Bootstrap bundle with popper-->
+    <script src="../vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

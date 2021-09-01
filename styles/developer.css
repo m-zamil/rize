@@ -1,0 +1,62 @@
+.files input {
+  outline: 2px dashed #92b0b3;
+  outline-offset: 0px;
+  -webkit-transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  padding: 30px;
+  text-align: center !important;
+  margin: 0;
+  width: 100% !important;
+  border: 0;
+  opacity: 0;
+}
+.files input:focus {
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  -webkit-transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+  border: 1px solid #92b0b3;
+}
+.files {
+  position: relative;
+  border: 2px dashed lightgray;
+}
+.files:after {
+  pointer-events: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 20px;
+  right: 0;
+  height: 20px;
+  content: "";
+  background-image: url("../images/icons/file-upload.svg");
+  display: block;
+  margin: 0 auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.files:before {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  right: 0;
+  content: "أرفق الملفات التي تخص الفرصة خاصتك يمكنك رفع حتى ٣ ملفات";
+  display: block;
+  margin: 0 auto;
+  color: #515357;
+  text-align: center;
+  font-size: 12px;
+}
+
+.login-form {
+  padding: 40px 100px;
+}
+
+.login-cover,
+.login-form {
+  min-height: 100vh;
+}
