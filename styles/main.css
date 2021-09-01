@@ -16,7 +16,7 @@ main {
   height: 100vh;
   height: 100vh;
   background-color: rgb(13, 41, 78, 0.87);
-  background-image: url("../images/florian-schmidinger-b_79nOqf95I-unsplash\ \(1\).png"), url("../images/Union-2.png");
+  background-image: url("../images/florian-schmidinger.png"), url("../images/Union-2.png");
   background-size: cover;
   position: relative;
 }
